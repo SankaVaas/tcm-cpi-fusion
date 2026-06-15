@@ -1,0 +1,21 @@
+name: tcm-cpi
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.1.0
+  - cudatoolkit=11.8        # used on Colab; omit for CPU-only conda env
+  - rdkit=2023.9.5
+  - pip
+  - pip:
+    - torch-geometric
+    - transformers
+    - fair-esm
+    - deepchem
+    - pubchempy
+    - wandb
+    - meeko
+    - vina
+    - pyyaml
