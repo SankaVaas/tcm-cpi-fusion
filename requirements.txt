@@ -1,6 +1,4 @@
-# ── Deep Learning ──────────────────────────────────────
-# torch and torch-geometric are installed by setup.sh separately
-# (CPU wheel needs special index URL)
+# ── Transformers / NLP ─────────────────────────────────
 transformers>=4.38.0
 datasets>=2.17.0
 
@@ -9,8 +7,10 @@ rdkit>=2023.9.5
 deepchem>=2.7.2
 pubchempy>=1.0.4
 
-# ── Protein language model ─────────────────────────────
-fair-esm>=2.0.0
+# ── Protein embeddings (install separately if needed) ──
+# Windows:  pip install git+https://github.com/facebookresearch/esm.git
+# Linux:    pip install fair-esm
+# Script 03 will tell you if it's missing.
 
 # ── Data science ───────────────────────────────────────
 pandas>=2.1.0
@@ -18,7 +18,7 @@ numpy>=1.26.0
 scipy>=1.11.0
 scikit-learn>=1.4.0
 
-# ── Docking (CPU-native) ───────────────────────────────
+# ── Docking ────────────────────────────────────────────
 meeko>=0.5.0
 vina>=1.2.5
 
@@ -34,7 +34,7 @@ pyyaml>=6.0.1
 requests>=2.31.0
 joblib>=1.3.0
 
-# ── Dev / testing ──────────────────────────────────────
+# ── Dev ────────────────────────────────────────────────
 pytest>=7.4.0
 black>=24.0.0
 isort>=5.13.0
