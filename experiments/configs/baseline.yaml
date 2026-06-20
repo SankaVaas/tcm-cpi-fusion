@@ -1,0 +1,12 @@
+project: tcm-cpi-fusion-baseline
+seed: 42
+
+data:
+  tcmsp_dir:      data/raw/tcmsp
+  bindingdb_path: data/raw/bindingdb/BindingDB_All_2D_v2.tsv
+
+baseline:
+  morgan_radius: 2
+  morgan_nbits:  2048
+  n_estimators:  300
+  max_depth:     20
