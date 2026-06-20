@@ -1,3 +1,8 @@
+"""
+GradCAM-style atom importance scores for the GCN encoder.
+Returns per-atom importance for a single compound-target pair.
+"""
+
 import torch
 import numpy as np
 
